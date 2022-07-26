@@ -3,8 +3,8 @@
 import subprocess
 
 cwd= "../"
-remoteDataset="/media/dati/RemoteDataset/simpleObjectDetectionVersioningRemote/"
-dataset_version=2
+remoteDataset="/media/dati/RemoteDataset/DVIntelRemote/"
+dataset_version=4
 
 
 # Each step need to be verified
