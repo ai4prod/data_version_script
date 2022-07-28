@@ -7,6 +7,6 @@ def loadCfgParameters():
     with open("parameters.yaml") as file:
         # The FullLoader parameter handles the conversion from YAML
         # scalar values to Python the dictionary format
-        runtime_param = yaml.load(file, Loader=yaml.FullLoader)
+        runtime_params = yaml.load(file, Loader=yaml.FullLoader)
 
     return runtime_params
