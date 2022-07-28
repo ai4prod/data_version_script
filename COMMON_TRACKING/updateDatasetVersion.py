@@ -1,11 +1,12 @@
+import subprocess
+from utils import loadCfgParameters
+
 # This script is used to track Dataset and build incremental version
 
-import subprocess
 
-cwd= "../"
-remoteDataset="/media/dati/RemoteDataset/DVIntelRemote/"
-dataset_version=4
-
+runtime_params= loadCfgParameters()
+dataset_version= runtime_params["update"]["dataset_version"]
+cwd=runtime_params["update"]["cwd"]
 
 # Each step need to be verified
 

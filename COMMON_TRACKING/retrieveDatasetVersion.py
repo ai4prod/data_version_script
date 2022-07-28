@@ -1,9 +1,13 @@
 import subprocess
+from utils import loadCfgParameters
+
 
 # This script is used to retrieve a specific Dataset version
 
-cwd= "../"
-dataset_version=2
+
+runtime_params= loadCfgParameters()
+dataset_version= runtime_params["update"]["dataset_version"]
+cwd=runtime_params["update"]["cwd"]
 
 
 p = subprocess.Popen(["git","checkout","v{}".format(str(dataset_version))], cwd=cwd)
