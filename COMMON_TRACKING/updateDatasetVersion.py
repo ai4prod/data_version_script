@@ -29,7 +29,7 @@ p.wait()
 if(p.returncode!=0):
     raise Exception("Cannot commit to git")
 
-p = subprocess.Popen(["git","tag","-a","v{}".format(str(dataset_version)),"-m","update dataset"], cwd=cwd)
+p = subprocess.Popen(["git","tag","-a","{}".format(str(dataset_version)),"-m","update dataset"], cwd=cwd)
 p.wait()
 
 if(p.returncode!=0):

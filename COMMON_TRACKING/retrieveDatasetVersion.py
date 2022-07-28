@@ -10,7 +10,7 @@ dataset_version= runtime_params["retrieve"]["dataset_version"]
 cwd=runtime_params["retrieve"]["cwd"]
 
 
-p = subprocess.Popen(["git","checkout","v{}".format(str(dataset_version))], cwd=cwd)
+p = subprocess.Popen(["git","checkout","{}".format(str(dataset_version))], cwd=cwd)
 p.wait()
 
 if(p.returncode!=0):
