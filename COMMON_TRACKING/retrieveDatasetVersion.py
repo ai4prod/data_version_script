@@ -6,8 +6,8 @@ from utils import loadCfgParameters
 
 
 runtime_params= loadCfgParameters()
-dataset_version= runtime_params["update"]["dataset_version"]
-cwd=runtime_params["update"]["cwd"]
+dataset_version= runtime_params["retrieve"]["dataset_version"]
+cwd=runtime_params["retrieve"]["cwd"]
 
 
 p = subprocess.Popen(["git","checkout","v{}".format(str(dataset_version))], cwd=cwd)
