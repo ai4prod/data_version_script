@@ -3,5 +3,5 @@ retrieve:
     dataset_version: "v3"
 update:
     cwd: "../../"
-    dataset_version: "v3"
+    dataset_version: "v2"
 

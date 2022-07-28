@@ -16,7 +16,7 @@ p.wait()
 if(p.returncode!=0):
     raise Exception("Cannot Use dvc")
 
-p = subprocess.Popen(["git","add","Data/Dataset.dvc","Data/.gitignore"], cwd=cwd)
+p = subprocess.Popen(["git","add","Data/Dataset.dvc"], cwd=cwd)
 p.wait()
 
 if(p.returncode!=0):
@@ -41,4 +41,4 @@ p.wait()
 if(p.returncode!=0):
     raise Exception("Cannot Update Dataset")
 
-print("UPDATE DATASET TO v{} SUCCESSFUL".format(dataset_version))
+print("UPDATE DATASET TO {} SUCCESSFUL".format(dataset_version))
