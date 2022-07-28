@@ -1,7 +1,7 @@
 retrieve:
-    cwd: "../"
+    cwd: "../../"
     dataset_version: "v3"
 update:
-    cwd: "../"
+    cwd: "../../"
     dataset_version: "v3"
 
